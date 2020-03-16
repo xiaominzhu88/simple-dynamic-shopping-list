@@ -23,15 +23,19 @@ function addInputValue() {
 
   inputElement.value = "";
 
-  let listItems = ul.getElementsByTagName("li");
   let removeButtons = document.getElementsByClassName("removeButton");
-  //console.log(removeButtons);
 
   for (i = 0; i < removeButtons.length; i++) {
-    removeButtons[i].addEventListener("click", function() {
-      ul.removeChild(this.parentNode);
-    });
-  }
+  removeButtons[i].onclick = clickEvent => {
+    const listItemToRemove = clickEvent.target.parentNode;
+    removeListItem(listItemToRemove);
+  };
+}
+
+
+function removeListItem(listItemElement) {
+document.querySelector("#enteredValue").removeChild(listItemElement);
+}
 }
 
 function reset() {
