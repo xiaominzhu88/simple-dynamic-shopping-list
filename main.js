@@ -31,7 +31,7 @@ function addInputValue() {
     removeButtons[i].addEventListener("click", function() {
       ul.removeChild(this.parentNode);
     });
-  }-
+  }
 }
 
 function reset() {
