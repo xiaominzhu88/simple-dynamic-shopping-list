@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <title>Simple-append-Practice</title>
+  </head>
+  <body>
+    <header>Shopping-List</header>
+
+    <main>
+      <div id="inputItem">
+        <label for="inputNewValue">Must have</label>
+        <input id="inputNewValue" type="text" value="" />
+      </div>
+      <br />
+
+      <button onclick="addInputValue()">Add to the list</button>
+      <button onclick="reset()">Reset</button>
+      <hr />
+
+      <div id="listContent">
+        <p>My Shopping-Item:</p>
+        <ul id="enteredValue"></ul>
+      </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
