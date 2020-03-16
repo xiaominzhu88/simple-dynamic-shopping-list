@@ -3,7 +3,7 @@ function addInputValue() {
   const val = inputElement.value;
   const listcontent = document.querySelector("#listContent");
   const ul = document.querySelector("#enteredValue");
-  
+
   let addedList = document.createElement("li");
   let removeButton = document.createElement("button");
 
